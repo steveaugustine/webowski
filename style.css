@@ -73,7 +73,7 @@
     height: 25px;
     background-color: #141414;
     color: white;
-    float: inline-end;
+    float: inline-start;
     box-shadow: 5px 5px 15px #00000063;
 }
 
