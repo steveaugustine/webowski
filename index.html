@@ -6,86 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flender Electric Guitars</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+
+    <script lang="JavaScript">
+        function changeImg1() {
+            var img = document.getElementById("img1");
+            var sel = document.getElementById("select1");
+
+            if (sel.value == "sunburst") {
+                img.src = "stratosunburst.png";
+            }
+            else if (sel.value == "white") {
+                img.src = "stratowhite.png";
+            }
+            else if (sel.value == "black") {
+                img.src = "stratoblack.png";
+            }
+        }
+
+        function changeImg2() {
+            var img = document.getElementById("img2");
+            var sel = document.getElementById("select2");
+
+            if (sel.value == "sunburst") {
+                img.src = "telesunburst.png";
+            }
+            else if (sel.value == "white") {
+                img.src = "telewhite.png";
+            }
+            else if (sel.value == "black") {
+                img.src = "teleblack.png";
+            }
+            else if (sel.value == "butter") {
+                img.src = "telebutter.png";
+            }
+        }
+    </script>
 </head>
 <body background="">
+    <!--Heading section-->
     <div class="title">
         <br>
+
         <h1 class="title_h1">Flender Guitars</h1>
         
         <em><p class="tagline">Music at your fingertips</p></em>
+
         <br>
     </div>
     
     <br><br>
-    <img src="guitar.png" alt="American Ultra Luxe" height="400px">      
-    <div class="features">
-        <br>
-        <p>The all new Flender American Ultra Luxe Stratocasters and Telecasters are the ultimate guitars for every style of music.
-            Be it jazz, rock or neo-funk the new American Ultra Luxe has you covered. From lightning fast shreds to soothing blues solos, you can do it all.
 
+    <!--Image and features-->
+    <img src="guitar.png" alt="American Ultra Luxe" height="450px" class="image">
+    
+    <div class="features">
+
+        <p>
+            The all new Flender American Ultra Luxe Stratocasters and Telecasters are the ultimate guitars for every style of music.
+            Be it jazz, rock or neo-funk the new American Ultra Luxe has you covered. From lightning fast shreds to soothing blues solos, you can do it all.
         </p>
+
         <ul>
             <li>Handmade Rosewood and Maple fretboards</li>
             <li>Best-in-class locking tuners</li>
-            <li>Mulitple pick-up options  </li>
+            <li>Mulitple pick-up options</li>
+            <li>Chord with comfort and bend strings with ease</li>
         </ul>
+
+
         <br>
     </div>
+
     <br>
+
+    <!--Stratocaster-->
     <div class="section">
+
         <div class="guitar_h1">
             <h1>Stratocaster</h1>
         </div>
-        <em><p class="price">Starting at 1000$</p></em>
-        <img src="strat.jpg" alt="" height="400" width="=400">
-        <div class="colours_div">
-            Colour
-            <select class="colours">
-                <option>
-                Sunburst
+
+        <div class="ui">
+
+            <em><p class="price">Starting at 1000$</p></em>
+
+            <div class="colours_div">
+                Colour(3)
+            </div>
+                
+            <select class="colours" id="select1" onchange="changeImg1();">
+                <option value="sunburst">
+                    Sunburst
                 </option>
-                <option>White
 
-                </option>   
-                <option>Black</option>
+                <option value="white">
+                    White
+                </option>  
+
+                <option value="black">
+                    Black
+                </option>
             </select>
+
+            <hr class="hr">
+
+            <div class="imgdiv">
+                <img src="stratosunburst.png" alt="" height="250" id="img1">
+            </div>
+
+            <ul style="list-style-type:none;">
+                <li>Stratocaster is a solid-body electric guitar with a contoured asymmetric double-cutaway body with an extended upper horn.</li> 
+            </ul>
+
+            <hr class="hr">
+
+            <center><div class="buy"><img src="button.png" height="30px"></div></center>
+
+            
+
+            <br>
+
         </div>
-
-        <center><div class="buy"><img src="button.png" height="30px"></div></center>
-
-        <br>
 
     </div>
 
     <br>
     
+    <!--Telecaster-->
     <div class="section">
 
-    
         <div class="guitar_h1">
             <h1>Telecaster</h1>
         </div>
         
-        
-        <em><p class="price">Starting at 1200$</p></em>
-        <img src="tele.jpeg" alt="" height="400" width="=400">
-        
-        <div class="colours_div">
-            Colour
-        </div>
-            <select class="colours">
-            <option>
-            Sunburst
-            </option>
-            <option>White
+        <div class="ui">
+            
+            <em><p class="price">Starting at 1200$</p></em>
+             
+            <div class="colours_div">
+                Colour(4)
+            </div>
 
-            </option>   
-            <option>Black</option>
-            <option>Butterscotch</option>
+            <select class="colours" id="select2" onchange="changeImg2();">
+                <option value="sunburst">
+                    Sunburst
+                </option>
+
+                <option value="white">
+                    White
+                </option>  
+
+                <option value="black">
+                    Black
+                </option>
+
+                <option value="butter">
+                    Butterscotch
+                </option>
             </select>
-        <center><div class="buy"><img src="button.png" height="30px"></div></center>
 
-        <br>
+            <hr class="hr">
+            
+            <div class="imgdiv">
+                <img src="telesunburst.png" alt="" height="250" id="img2">
+            </div>
+
+            <ul style="list-style-type:none;">
+                <li>Fender Telecaster is a solid-body electric guitar with a flat asymmetric single-cutaway body.</li> 
+                <li>It has both bright, rich cutting tone and a mellow, warm, bluesy jazz tone depending on the selected pickup.</li>
+            </ul>
+
+            <hr class="hr">
+
+            <center><div class="buy"><img src="button.png" height="30px"></div></center>
+
+            <br>
+
+        </div>
+
     </div>
 </body>
 </html>
