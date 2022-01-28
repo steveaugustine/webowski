@@ -100,3 +100,11 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 30px;
 }
+
+.buy:hover {
+    box-shadow: 5px 5px 15px #00000063;
+}
+
+.buy:active {
+    box-shadow: none;
+}
