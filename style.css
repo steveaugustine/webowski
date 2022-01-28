@@ -1,0 +1,49 @@
+body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    background-color: #3f3f3f9a;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: large;
+}
+
+.title_h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 100%;
+    color: rgb(182, 51, 51);
+}
+
+.tagline {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(182, 51, 51);
+}
+
+.image {
+    float: left;
+}
+
+.features {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    padding-left: 50px;
+    opacity: 50%;
+    width: 50%;
+    border: none;
+}
+
+.guitar_h1 {
+    background-color: #3f3f3f9a;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: large;
+    font-size: small;
+}
